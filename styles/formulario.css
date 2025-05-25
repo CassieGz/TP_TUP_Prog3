@@ -1,0 +1,94 @@
+@import url(./global.css);
+
+section {
+  padding: 25px 0;
+}
+
+.titulo-form {
+  text-align: center;
+  padding: 15px;
+}
+
+.caja-form {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+form {
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  background-color: var(--t-color);
+  border-radius: 15px;
+  padding: 10px 25px;
+}
+
+.titulo {
+  text-align: center;
+  padding: 1px;
+}
+
+form fieldset {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+input,
+label,
+select,
+textarea {
+  border: none;
+  border-radius: 8px;
+  padding: 8px;
+  outline: none;
+  margin-left: 2px;
+  width: 100%;
+  max-width: 100%;
+}
+
+textarea {
+  resize: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border: 1px solid var(--s-color);
+  box-shadow: 0 0 4px rgb(127, 169, 211, 0.2);
+}
+
+.botones {
+  display: block;
+  padding: 10px 0;
+}
+
+/*--------------------------media queries--------------------------*/
+
+@media (min-width: 300px) and (max-width: 767px) {
+  .caja-form {
+    width: 100%;
+    height: auto;
+  }
+
+  form {
+    width: 90%;
+    height: auto;
+  }
+}

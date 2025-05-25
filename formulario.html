@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/logo/favicon.png" type="image/png">
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/formulario.css" />
+    <title>Tentempie Patisserie</title>
+  </head>
+  <body>
+    <header>
+      <img src="./img/logo/Logo_nombre.svg" alt="logo_pasteleria" class="logo" id="logo" />
+      <nav>
+        <ul>
+          <li><a href="./index.html" target="_blank">Home</a></li>
+          <li><a href="./index.html#somos" target="_blank">Sobre Tentempié</a></li>
+          <li><a href="./productos.html" target="_blank">Productos</a></li>
+          <li><a href="./formulario.html" target="_blank">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="titulo-form">
+          <h2>Tu postre soñado esta a un click de distancia!</h2>
+          <p>El formulario es para pedidos pero si querés consultar cualquier otra cosa mandanos tus datos y completa solamente la cajita del mensaje!</p>
+        </div>
+        <div class="caja-form">
+          <form action="#" name="contacto" method="post">
+            <span class="titulo">¡Contactanos!</>
+            <fieldset class="datosPersonales">
+              <label for="nombre">Nombre</label>
+              <input type="text" placeholder="Jose" required />
+              <label for="email">Email</label>
+              <input type="email" placeholder="email@server.com" required />
+              <label for="telefono">Teléfono</label>
+              <input type="tel" placeholder="xxx-xxxxxxx" required />
+            </fieldset>
+            <fieldset>
+              <label for="categoria">Elegí los productos de tu interés:</label>
+              <label for="pasteles">
+                <input type="checkbox" />
+                Tortas/ Pasteles /Tartas
+              </label>
+  
+              <label for="cookies">
+                <input type="checkbox" />
+                Cookies/ Macarons/ Donas
+              </label>
+  
+              <label for="postres">
+                <input type="checkbox" />
+                Postres individuales
+              </label>
+  
+              <label for="japones">
+                <input type="checkbox" />
+                Postres Japoneses
+              </label>
+  
+              <label for="saludables">
+                <input type="checkbox" />
+                Postres saludables
+              </label>
+            </fieldset>
+  
+            <fieldset>
+              <legend>
+                ¡Podés seleccionar nuestros productos o personalizar tu pedido como
+                quieras!
+              </legend>
+              <label for="selectipo">Elegí un tipo de producto:</label>
+              <select name="selectipo" id="selectipo">
+                <option value="">-- Seleccionar tipo --</option>
+                <option value="catalogo">Productos de la página</option>
+                <option value="personalizado">Personalizado</option>
+              </select>
+            </fieldset>
+  
+            <fieldset>
+              <label for="mensaje">Indicanos acá el detalle de tu pedido</label>
+              <textarea
+                name="detalles"
+                id="detalles"
+                cols="30"
+                rows="20"
+                maxlength="300"
+                placeholder="Escribe los detalles de tu pedido..."
+              ></textarea>
+            </fieldset>
+  
+            <fieldset>
+              <label>
+                <input type="radio" name="envio" disabled />Retiro en el local o
+                envíos solo en CABA,AMBA y GBA.
+              </label>
+            </fieldset>
+  
+            <fieldset>
+              <legend>
+                ¿Querés enterarte de todo lo nuevo y recibir códigos de descuento
+                antes que cualquiera?
+              </legend>
+              <div>
+                <input type="radio" id="si" name="newsletter" checked />
+                <label for="si">Sí,obvio!</label>
+              </div>
+              <div>
+                <input type="radio" id="no" name="newsletter" />
+                <label for="no">En otro momento</label>
+              </div>
+            </fieldset>
+            <div class="botones">
+              <button type="submit">Enviar</button>
+              <button type="reset">Resetear</button>
+            </div>
+          </form>
+        </div>
+       
+      </section>
+    </main>
+    <footer>
+      <ul>
+        <li>
+          <a href="https://www.facebook.com/?locale=es_LA"
+            ><img
+              src="./img/icons/facebook-f-brands.svg"
+              alt="icono-fb"
+              class="icon-fb"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/">
+            <img
+              src="./img/icons/instagram-brands.svg"
+              alt="icon-ig"
+              srcset=""
+              class="icon"
+          /></a>
+        </li>
+        <li>
+          <a href="https://x.com/?lang=es"
+            >
+            <img
+                  src="./img/icons/x-twitter-brands.svg"
+                  alt="icon-twitter"
+                  srcset=""
+                  class="icon"
+                  />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.tiktok.com/es/"
+              >
+              <img
+                src="./img/icons/tiktok-brands.svg"
+                alt="icon-tiktok"
+                srcset=""
+                class="icon"
+            />
+          </a>
+        </li>
+      </ul>
+        
+      <div>
+        <p><a href="#logo"">Volver al inicio</a></p>
+        <p>Tentempie&copy;2025</p>
+      </div>
+    </footer>
+  </body>
+</html>
